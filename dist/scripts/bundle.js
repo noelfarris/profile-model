@@ -26,7 +26,7 @@ $('#role').val(user.get('role'));
 
 $('form').submit(function (e) {
 	e.preventDefault();
-	user.set({
+	user.save({
 		name: $('#name').val(),
 		email: $('#inputEmail3').val(),
 		role: $('#role').val()
